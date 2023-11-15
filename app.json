@@ -1,0 +1,15 @@
+{
+  "name": "leanFlow",
+  "displayName": "leanFlow",
+  "ios": { "supportsTablet": true },
+  "expo": {
+    "plugins": [
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access camera."
+        }
+      ]
+    ]
+  }
+}

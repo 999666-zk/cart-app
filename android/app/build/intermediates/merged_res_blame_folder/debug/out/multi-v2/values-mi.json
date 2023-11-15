@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/april/Desktop/git-lab/app/cart-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mi/values-mi.xml",
+            "map": [
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/res/values-mi/values-mi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "73",
+                        "endOffsets": "124"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "852",
+                        "endColumns": "73",
+                        "endOffsets": "921"
+                    }
+                },
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/res/values-mi/values-mi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,237,538,605,852",
+                        "endColumns": "181,300,66,246,69",
+                        "endOffsets": "232,533,600,847,917"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,237,538,605,926",
+                        "endColumns": "181,300,66,246,69",
+                        "endOffsets": "232,533,600,847,991"
+                    }
+                }
+            ]
+        }
+    ]
+}

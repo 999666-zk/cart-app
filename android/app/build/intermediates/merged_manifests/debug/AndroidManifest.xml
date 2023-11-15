@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.cat.qflowlogin.app" android:versionCode="13" android:versionName="1.3.3">
+    
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="31"/>
+    
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    
+  <uses-permission android:name="android.permission.CAMERA"/>
+    
+  <uses-permission android:name="android.permission.INTERNET"/>
+    
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    
+  <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.permission.JPUSH_MESSAGE"/>
+    
+  <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    
+  <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    
+  <uses-permission android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE"/>
+    
+  <uses-permission android:name="android.permission.VIBRATE"/>
+    
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    
+  <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    
+  <uses-permission android:name="android.permission.GET_TASKS"/>
+    
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    
+  <queries>
+        
+    <intent>
+            
+      <action android:name="android.intent.action.OPEN_DOCUMENT_TREE"/>
+          
+    </intent>
+        
+    <intent>
+            
+      <action android:name="android.support.customtabs.action.CustomTabsService"/>
+          
+    </intent>
+        
+    <intent>
+            
+      <action android:name="com.huawei.hms.core.aidlservice"/>
+          
+    </intent>
+        
+    <intent>
+            
+      <action android:name="com.huawei.hms.core"/>
+          
+    </intent>
+      
+  </queries>
+    
+  <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    
+  <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    
+  <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    
+  <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG" android:protectionLevel="signature"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.PUSH_PROVIDER" android:protectionLevel="signature"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.PUSH_WRITE_PROVIDER" android:protectionLevel="signature"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.permission.PUSH_PROVIDER"/>
+    
+  <uses-permission android:name="com.meizu.flyme.permission.PUSH"/>
+    
+  <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.push.permission.MESSAGE"/>
+    
+  <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.permission.C2D_MESSAGE"/>
+    
+  <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    
+  <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    
+  <permission android:name="com.cat.qflowlogin.app.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    
+  <uses-permission android:name="com.cat.qflowlogin.app.permission.MIPUSH_RECEIVE"/>
+    
+  <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    
+  <application android:name="com.cat.qflowlogin.app.MainApplication" android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        
+    <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" android:exported="false"/>
+        
+    <meta-data android:name="JPUSH_APPKEY" android:value="f31e6cdeb347cccfd7542bb0"/>
+        
+    <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        
+    <activity android:name="com.cat.qflowlogin.app.MainActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize">
+            
+      <intent-filter>
+                
+        <action android:name="android.intent.action.MAIN"/>
+                
+        <category android:name="android.intent.category.LAUNCHER"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <activity android:name="cn.jpush.android.ui.PopWinActivity" android:exported="true" android:theme="@style/MyDialogStyle">
+            
+      <intent-filter>
+                
+        <category android:name="android.intent.category.DEFAULT"/>
+                
+        <action android:name="cn.jpush.android.ui.PopWinActivity"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <activity android:name="cn.jpush.android.ui.PushActivity" android:configChanges="orientation|keyboardHidden" android:exported="true" android:theme="@android:style/Theme.NoTitleBar">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.ui.PushActivity"/>
+                
+        <category android:name="android.intent.category.DEFAULT"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <activity android:name="cn.jpush.android.service.JNotifyActivity" android:exported="true" android:taskAffinity="" android:theme="@style/JPushTheme">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.intent.JNotifyActivity"/>
+                
+        <category android:name="android.intent.category.DEFAULT"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <receiver android:name="cn.jiguang.plugins.push.receiver.JPushModuleReceiver" android:enabled="true" android:exported="false">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <receiver android:name="cn.jiguang.plugins.push.receiver.JPushBroadcastReceiver" android:enabled="true" android:exported="false">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <receiver android:name="cn.jpush.android.service.SchedulerReceiver" android:exported="false"/>
+        
+    <activity android:name="cn.android.service.JTransitActivity" android:exported="true" android:taskAffinity="" android:theme="@style/JPushTheme">
+            
+      <intent-filter>
+                
+        <action android:name="cn.android.service.JTransitActivity"/>
+                
+        <category android:name="android.intent.category.DEFAULT"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <activity android:name="cn.jpush.android.service.DActivity" android:enabled="true" android:exported="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.intent.DActivity"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </activity>
+        
+    <provider android:name="cn.jpush.android.service.InitProvider" android:authorities="com.cat.qflowlogin.app.jiguang.InitProvider" android:exported="false"/>
+        
+    <receiver android:name="cn.jpush.android.service.AlarmReceiver" android:exported="false"/>
+        
+    <receiver android:name="cn.jpush.android.service.PushReceiver" android:enabled="true" android:exported="false">
+            
+      <intent-filter android:priority="1000">
+                
+        <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <service android:name="cn.jpush.android.service.PushService" android:exported="false">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jpush.android.intent.REGISTER"/>
+                
+        <action android:name="cn.jpush.android.intent.REPORT"/>
+                
+        <action android:name="cn.jpush.android.intent.PushService"/>
+                
+        <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <service android:name="cn.jiguang.plugins.service.JCoreModuleService" android:exported="true">
+            
+      <intent-filter>
+                
+        <action android:name="cn.jiguang.user.service.action"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <provider android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider" android:authorities="com.cat.qflowlogin.app.fileprovider" android:exported="false" android:grantUriPermissions="true">
+            
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+          
+    </provider>
+        
+    <provider android:name="expo.modules.filesystem.FileSystemFileProvider" android:authorities="com.cat.qflowlogin.app.FileSystemFileProvider" android:exported="false" android:grantUriPermissions="true">
+            
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_system_provider_paths"/>
+          
+    </provider>
+        
+    <meta-data android:name="org.unimodules.core.AppLoader#react-native-headless" android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader"/>
+        
+    <receiver android:name="com.huawei.hms.support.api.push.PushMsgReceiver" android:directBootAware="true" android:exported="true" android:permission="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG">
+            
+      <intent-filter>
+                
+        <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY"/>
+                
+        <action android:name="com.huawei.intent.action.PUSH"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <receiver android:name="com.huawei.hms.support.api.push.PushReceiver" android:directBootAware="true" android:exported="true" android:permission="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG">
+            
+      <intent-filter>
+                
+        <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                
+        <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <service android:name="com.huawei.hms.support.api.push.service.HmsMsgService" android:directBootAware="true" android:enabled="true" android:exported="true" android:process=":pushservice">
+            
+      <intent-filter>
+                
+        <action android:name="com.huawei.push.msg.NOTIFY_MSG"/>
+                
+        <action android:name="com.huawei.push.msg.PASSBY_MSG"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <provider android:name="com.huawei.hms.support.api.push.PushProvider" android:authorities="com.cat.qflowlogin.app.huawei.push.provider" android:exported="true" android:readPermission="com.cat.qflowlogin.app.permission.PUSH_PROVIDER" android:writePermission="com.cat.qflowlogin.app.permission.PUSH_WRITE_PROVIDER"/>
+        
+    <meta-data android:name="com.huawei.hms.client.service.name:push" android:value="push:6.3.0.304"/>
+        
+    <meta-data android:name="com.huawei.hms.min_api_level:push:push" android:value="1"/>
+        
+    <activity android:name="com.huawei.hms.support.api.push.TransActivity" android:exported="false"/>
+        
+    <service android:name="cn.jpush.android.service.PluginHuaweiPlatformsService" android:exported="false">
+            
+      <intent-filter>
+                
+        <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <provider android:name="com.huawei.hms.aaid.InitProvider" android:authorities="com.cat.qflowlogin.app.aaidinitprovider" android:exported="false" android:initOrder="500"/>
+        
+    <meta-data android:name="com.huawei.hms.client.service.name:opendevice" android:value="opendevice:6.3.0.304"/>
+        
+    <meta-data android:name="com.huawei.hms.min_api_level:opendevice:push" android:value="1"/>
+        
+    <meta-data android:name="com.huawei.hms.client.service.name:base" android:value="base:6.4.0.302"/>
+        
+    <meta-data android:name="com.huawei.hms.min_api_level:base:hmscore" android:value="1"/>
+        
+    <meta-data android:name="availableLoaded" android:value="yes"/>
+        
+    <provider android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider" android:authorities="com.cat.qflowlogin.app.AGCInitializeProvider" android:exported="false"/>
+        
+    <service android:name="com.huawei.agconnect.core.ServiceDiscovery" android:exported="false"/>
+        
+    <service android:name="com.meizu.cloud.pushsdk.NotificationService" android:exported="true"/>
+        
+    <receiver android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver" android:exported="true" android:permission="com.meizu.flyme.permission.PUSH">
+            
+      <intent-filter>
+                
+        <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <receiver android:name="cn.jpush.android.service.PluginMeizuPlatformsReceiver" android:exported="true" android:permission="com.meizu.flyme.permission.PUSH">
+            
+      <intent-filter>
+                
+        <action android:name="com.meizu.flyme.push.intent.MESSAGE"/>
+                
+        <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK"/>
+                
+        <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK"/>
+                
+        <action android:name="com.meizu.c2dm.intent.REGISTRATION"/>
+                
+        <action android:name="com.meizu.c2dm.intent.RECEIVE"/>
+                
+        <category android:name="com.cat.qflowlogin.app"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <meta-data android:name="MEIZU_APPKEY" android:value="MZ-cad82d5855a6456f8dd1050828e3b01f"/>
+        
+    <meta-data android:name="MEIZU_APPID" android:value="MZ-135960"/>
+        
+    <receiver android:name="cn.jpush.android.service.PluginVivoMessageReceiver" android:exported="false">
+            
+      <intent-filter>
+                
+        <action android:name="com.vivo.pushclient.action.RECEIVE"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <meta-data android:name="sdk_version_vivo" android:value="484"/>
+        
+    <service android:name="com.vivo.push.sdk.service.CommandClientService" android:exported="true" android:permission="com.push.permission.UPSTAGESERVICE"/>
+        
+    <activity android:name="com.vivo.push.sdk.LinkProxyClientActivity" android:exported="false" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        
+    <meta-data android:name="local_iv" android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI"/>
+        
+    <meta-data android:name="com.vivo.push.api_key" android:value="51966500daccc3ecf935096f9b4585ac"/>
+        
+    <meta-data android:name="com.vivo.push.app_id" android:value="105649035"/>
+        
+    <service android:name="cn.jpush.android.service.PluginOppoPushService" android:exported="true" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            
+      <intent-filter>
+                
+        <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <service android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService" android:exported="true" android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE">
+            
+      <intent-filter>
+                
+        <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <service android:name="com.heytap.msp.push.service.DataMessageCallbackService" android:exported="true" android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE">
+            
+      <intent-filter>
+                
+        <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE"/>
+                
+        <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE"/>
+              
+      </intent-filter>
+          
+    </service>
+        
+    <meta-data android:name="OPPO_APPKEY" android:value="OP-91f3bd72afd942b4bebc6df441b4a12d"/>
+        
+    <meta-data android:name="OPPO_APPID" android:value="OP-31066251"/>
+        
+    <meta-data android:name="OPPO_APPSECRET" android:value="OP-76b946372fe84bf5b1dcc0d7b37e9e8f"/>
+        
+    <meta-data android:name="sdkVersion" android:value="3100"/>
+        
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        
+    <meta-data android:name="XIAOMI_APPID" android:value="MI-2882303761520247654"/>
+        
+    <meta-data android:name="XIAOMI_APPKEY" android:value="MI-5392024785654"/>
+        
+    <service android:name="com.xiaomi.push.service.XMJobService" android:enabled="true" android:exported="false" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        
+    <service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" android:process=":pushservice"/>
+        
+    <service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true"/>
+        
+    <service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true"/>
+        
+    <receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false" android:process=":pushservice">
+            
+      <intent-filter>
+                
+        <action android:name="com.xiaomi.push.PING_TIMER"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <receiver android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver" android:exported="true">
+            
+      <intent-filter>
+                
+        <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+              
+      </intent-filter>
+            
+      <intent-filter>
+                
+        <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+              
+      </intent-filter>
+            
+      <intent-filter>
+                
+        <action android:name="com.xiaomi.mipush.ERROR"/>
+              
+      </intent-filter>
+          
+    </receiver>
+        
+    <activity android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            
+      <meta-data android:name="supportStyle" android:value="scene|voip"/>
+          
+    </activity>
+        
+    <activity android:name="com.huawei.hms.activity.BridgeActivity" android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode" android:excludeFromRecents="true" android:exported="false" android:hardwareAccelerated="true" android:screenOrientation="behind" android:theme="@style/Base_Translucent">
+            
+      <meta-data android:name="hwc-theme" android:value="androidhwext:style/Theme.Emui.Translucent"/>
+          
+    </activity>
+        
+    <activity android:name="com.huawei.hms.activity.EnableServiceActivity" android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout" android:exported="false"/>
+        
+    <meta-data android:name="com.huawei.hms.client.appid" android:value="appid=108362053"/>
+      
+  </application>
+  
+</manifest>

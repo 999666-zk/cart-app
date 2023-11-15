@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/april/Desktop/git-lab/app/cart-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my-rZG/values-my-rZG.xml",
+            "map": [
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/res/values-my-rZG/values-my-rZG.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "899",
+                        "endColumns": "72",
+                        "endOffsets": "967"
+                    }
+                },
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/res/values-my-rZG/values-my-rZG.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,253,582,652,899",
+                        "endColumns": "197,328,69,246,68",
+                        "endOffsets": "248,577,647,894,963"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,253,582,652,972",
+                        "endColumns": "197,328,69,246,68",
+                        "endOffsets": "248,577,647,894,1036"
+                    }
+                },
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/951e42964ca35ea805a750a51dd82d21/transformed/jetified-com.heytap.msp-push-3.1.0/res/values-my-rZG/values-my-rZG.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "69",
+                        "endOffsets": "120"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "1041",
+                        "endColumns": "69",
+                        "endOffsets": "1106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "497847803323",
+    "firebase_url": "https://leanflow-cf2f4.firebaseio.com",
+    "project_id": "leanflow-cf2f4",
+    "storage_bucket": "leanflow-cf2f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497847803323:android:57f9174ede413979daf89e",
+        "android_client_info": {
+          "package_name": "com.cat.qflowlogin.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497847803323-dig5gv8d11s9gjmsc3f56amap6o84j4r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDagqtc8-DLJg0Dzhm2dDFVQqONMO5L13c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497847803323-dig5gv8d11s9gjmsc3f56amap6o84j4r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

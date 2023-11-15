@@ -1,0 +1,6 @@
+module Pods_leanFlow_leanFlowTests {
+  umbrella header "Pods-leanFlow-leanFlowTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

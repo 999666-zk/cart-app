@@ -1,0 +1,1088 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cat.qflowlogin.app"
+4    android:versionCode="13"
+5    android:versionName="1.3.3" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="31" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.CAMERA" />
+12-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:3:3-62
+12-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:3:20-60
+13    <uses-permission android:name="android.permission.INTERNET" /> <!-- 查看网络状态，sdk重连机制等需要使用 -->
+13-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:4:3-64
+13-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:4:20-62
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 适配Android 13，应用弹出通知必须权限 -->
+14-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:6:3-77
+14-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:6:20-74
+15    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- 添加以下权限声明 -->
+15-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:8:3-74
+15-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:8:20-72
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:10:3-73
+16-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:10:20-70
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[com.facebook.flipper:flipper:0.125.0] /Users/april/.gradle/caches/transforms-3/6c9ceb32d61cebd633e32d8295f41aa8/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+17-->[com.facebook.flipper:flipper:0.125.0] /Users/april/.gradle/caches/transforms-3/6c9ceb32d61cebd633e32d8295f41aa8/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+18
+19    <permission
+19-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-11:47
+20        android:name="com.cat.qflowlogin.app.permission.JPUSH_MESSAGE"
+20-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-65
+21        android:protectionLevel="signature" /> <!-- Required -->
+21-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-44
+22    <uses-permission android:name="com.cat.qflowlogin.app.permission.JPUSH_MESSAGE" /> <!-- 华为角标 -->
+22-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
+22-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-78
+23    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" /> <!-- vivo 角标 -->
+23-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:5-91
+23-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:22-88
+24    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON" /> <!-- honor 角标 -->
+24-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:5-83
+24-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:22-80
+25    <uses-permission android:name="com.hihonor.android.launcher.permission.CHANGE_BADGE" /> <!-- 小米 推送必须 -->
+25-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:5-92
+25-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:22-89
+26    <uses-permission android:name="android.permission.VIBRATE" /> <!-- Optional. Required for location feature -->
+26-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:5-66
+26-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:22-63
+27    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+27-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:5-81
+27-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:22-78
+28    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+28-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:5-79
+28-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:22-76
+29    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+29-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:5-85
+29-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:22-82
+30    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+30-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:5-77
+30-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:22-74
+31    <uses-permission android:name="android.permission.GET_TASKS" />
+31-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:5-68
+31-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:22-65
+32    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+32-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:5-81
+32-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:33:22-78
+33    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+33-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:5-80
+33-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:22-77
+34
+35    <queries>
+35-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:5-20:15
+36
+37        <!-- Query open documents -->
+38        <intent>
+38-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-19:18
+39            <action android:name="android.intent.action.OPEN_DOCUMENT_TREE" />
+39-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-79
+39-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:21-76
+40        </intent>
+41        <intent>
+41-->[:expo-web-browser] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-web-browser/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:18
+42
+43            <!-- Required for opening tabs if targeting API 30 -->
+44            <action android:name="android.support.customtabs.action.CustomTabsService" />
+44-->[:expo-web-browser] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-web-browser/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-90
+44-->[:expo-web-browser] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-web-browser/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:21-87
+45        </intent>
+46        <intent>
+46-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:15:9-17:18
+47            <action android:name="com.huawei.hms.core.aidlservice" />
+47-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:16:13-70
+47-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:16:21-67
+48        </intent>
+49        <intent>
+49-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:18:9-20:18
+50            <action android:name="com.huawei.hms.core" />
+50-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:19:13-58
+50-->[com.huawei.hms:device:6.4.0.302] /Users/april/.gradle/caches/transforms-3/16477fdfb257c60cda1b1e0bbb01b488/transformed/jetified-device-6.4.0.302/AndroidManifest.xml:19:21-55
+51        </intent>
+52    </queries>
+53
+54    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+54-->[:expo-local-authentication] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-local-authentication/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-74
+54-->[:expo-local-authentication] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-local-authentication/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-71
+55    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+55-->[:expo-local-authentication] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-local-authentication/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:5-72
+55-->[:expo-local-authentication] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-local-authentication/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:22-69
+56
+57    <uses-feature
+57-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:25:5-27:36
+58        android:name="android.hardware.camera"
+58-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:26:9-47
+59        android:required="false" />
+59-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:27:9-33
+60    <uses-feature
+60-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:28:5-30:36
+61        android:name="android.hardware.camera.autofocus"
+61-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:29:9-57
+62        android:required="false" />
+62-->[com.google.android:cameraview:1.0.0] /Users/april/.gradle/caches/transforms-3/dfc24e8747f806687eeed0282432cc60/transformed/jetified-cameraview-1.0.0/AndroidManifest.xml:30:9-33
+63
+64    <permission
+64-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:9:5-11:47
+65        android:name="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG"
+65-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:10:9-68
+66        android:protectionLevel="signature" /> <!-- PUSH_PROVIDER and PUSH_WRITE_PROVIDER are both provider registered permissions for the notification switch. -->
+66-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:11:9-44
+67    <!-- The SDK's notification bar switch, EMUI 9.x becomes write to the local sp, sharing the file through the provider to the push-rom, which reads the sp file to get the status of the notification bar switch. -->
+68    <permission
+68-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:14:5-16:47
+69        android:name="com.cat.qflowlogin.app.permission.PUSH_PROVIDER"
+69-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:15:9-65
+70        android:protectionLevel="signature" />
+70-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:16:9-44
+71    <permission
+71-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:17:5-19:47
+72        android:name="com.cat.qflowlogin.app.permission.PUSH_WRITE_PROVIDER"
+72-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:18:9-71
+73        android:protectionLevel="signature" />
+73-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:19:9-44
+74
+75    <uses-permission android:name="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG" />
+75-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:21:5-84
+75-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:21:22-81
+76    <uses-permission android:name="com.cat.qflowlogin.app.permission.PUSH_PROVIDER" />
+76-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:22:5-81
+76-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:22:22-78
+77    <uses-permission android:name="com.meizu.flyme.permission.PUSH" /> <!-- 兼容 Flyme5 的权限配置 -->
+77-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:16:5-71
+77-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:16:22-68
+78    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+78-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:20:5-79
+78-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:20:22-76
+79
+80    <permission
+80-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:22:5-24:47
+81        android:name="com.cat.qflowlogin.app.push.permission.MESSAGE"
+81-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:23:9-64
+82        android:protectionLevel="signature" />
+82-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:24:9-44
+83
+84    <uses-permission android:name="com.cat.qflowlogin.app.push.permission.MESSAGE" /> <!-- 兼容 Flyme3 的权限配置 -->
+84-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:26:5-80
+84-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:26:22-77
+85    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+85-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:28:5-73
+85-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:28:22-70
+86
+87    <permission
+87-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:30:5-32:47
+88        android:name="com.cat.qflowlogin.app.permission.C2D_MESSAGE"
+88-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:31:9-63
+89        android:protectionLevel="signature" />
+89-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:32:9-44
+90
+91    <uses-permission android:name="com.cat.qflowlogin.app.permission.C2D_MESSAGE" />
+91-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:34:5-79
+91-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:34:22-76
+92    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+92-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:11:5-86
+92-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:11:22-83
+93    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" /> <!-- the following 2 com.xiaomi.mipushdemo should be changed to your package name -->
+93-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:12:5-85
+93-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:12:22-82
+94    <permission
+94-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:11:5-13:47
+95        android:name="com.cat.qflowlogin.app.permission.MIPUSH_RECEIVE"
+95-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:12:9-66
+96        android:protectionLevel="signature" />
+96-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:13:9-44
+97
+98    <uses-permission android:name="com.cat.qflowlogin.app.permission.MIPUSH_RECEIVE" />
+98-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:15:5-82
+98-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:15:22-79
+99    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+99-->[com.android.installreferrer:installreferrer:1.0] /Users/april/.gradle/caches/transforms-3/22d74d5669a998149a854ed05445e668/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+99-->[com.android.installreferrer:installreferrer:1.0] /Users/april/.gradle/caches/transforms-3/22d74d5669a998149a854ed05445e668/transformed/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+100
+101    <application
+101-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:3-20:17
+102        android:name="com.cat.qflowlogin.app.MainApplication"
+102-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:16-47
+103        android:allowBackup="false"
+103-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:162-189
+104        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+104-->[androidx.core:core:1.6.0] /Users/april/.gradle/caches/transforms-3/143b98a47773c0574fec4e8402546018/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+105        android:debuggable="true"
+106        android:icon="@mipmap/ic_launcher"
+106-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:81-115
+107        android:label="@string/app_name"
+107-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:48-80
+108        android:roundIcon="@mipmap/ic_launcher_round"
+108-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:116-161
+109        android:supportsRtl="true"
+109-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:14:9-35
+110        android:theme="@style/AppTheme"
+110-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:11:190-221
+111        android:usesCleartextTraffic="true" >
+111-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:8:9-44
+112        <activity
+112-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:11:9-111
+113            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+113-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:11:19-83
+114            android:exported="false" />
+114-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/debug/AndroidManifest.xml:11:84-108
+115
+116        <meta-data
+117            android:name="JPUSH_APPKEY"
+118            android:value="f31e6cdeb347cccfd7542bb0" />
+119        <meta-data
+120            android:name="JPUSH_CHANNEL"
+121            android:value="developer-default" />
+122
+123        <activity
+123-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:5-19:16
+124            android:name="com.cat.qflowlogin.app.MainActivity"
+124-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:15-43
+125            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+125-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:77-186
+126            android:exported="true"
+126-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:262-285
+127            android:label="@string/app_name"
+127-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:44-76
+128            android:launchMode="singleTask"
+128-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:187-218
+129            android:windowSoftInputMode="adjustResize" >
+129-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:14:219-261
+130            <intent-filter>
+130-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:15:7-18:23
+131                <action android:name="android.intent.action.MAIN" />
+131-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:16:9-60
+131-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:16:17-58
+132
+133                <category android:name="android.intent.category.LAUNCHER" />
+133-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:17:9-68
+133-->/Users/april/Desktop/git-lab/app/cart-app/android/app/src/main/AndroidManifest.xml:17:19-66
+134            </intent-filter>
+135        </activity>
+136        <activity
+136-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:9-48:20
+137            android:name="cn.jpush.android.ui.PopWinActivity"
+137-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:13-62
+138            android:exported="true"
+138-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:39:13-36
+139            android:theme="@style/MyDialogStyle" >
+139-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:40:13-49
+140            <intent-filter>
+140-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:41:13-47:29
+141                <category android:name="android.intent.category.DEFAULT" />
+141-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:17-76
+141-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:27-73
+142
+143                <action android:name="cn.jpush.android.ui.PopWinActivity" />
+143-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:44:17-77
+143-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:44:25-74
+144
+145                <category android:name="com.cat.qflowlogin.app" />
+145-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+145-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+146            </intent-filter>
+147        </activity>
+148        <activity
+148-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:49:9-60:20
+149            android:name="cn.jpush.android.ui.PushActivity"
+149-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:50:13-60
+150            android:configChanges="orientation|keyboardHidden"
+150-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:51:13-63
+151            android:exported="true"
+151-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:52:13-36
+152            android:theme="@android:style/Theme.NoTitleBar" >
+152-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:53:13-60
+153            <intent-filter>
+153-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:54:13-59:29
+154                <action android:name="cn.jpush.android.ui.PushActivity" />
+154-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:55:17-75
+154-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:55:25-72
+155
+156                <category android:name="android.intent.category.DEFAULT" />
+156-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:17-76
+156-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:27-73
+157                <category android:name="com.cat.qflowlogin.app" />
+157-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+157-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+158            </intent-filter>
+159        </activity>
+160        <activity
+160-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:61:9-72:20
+161            android:name="cn.jpush.android.service.JNotifyActivity"
+161-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:62:13-68
+162            android:exported="true"
+162-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:63:13-36
+163            android:taskAffinity=""
+163-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:64:13-36
+164            android:theme="@style/JPushTheme" >
+164-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:65:13-46
+165            <intent-filter>
+165-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:66:13-71:29
+166                <action android:name="cn.jpush.android.intent.JNotifyActivity" />
+166-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:67:17-82
+166-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:67:25-79
+167
+168                <category android:name="android.intent.category.DEFAULT" /> <!-- Required SDK核心功能 since 4.2.2 -->
+168-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:17-76
+168-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:27-73
+169                <category android:name="com.cat.qflowlogin.app" />
+169-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+169-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+170            </intent-filter>
+171        </activity>
+172
+173        <receiver
+173-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:74:9-83:20
+174            android:name="cn.jiguang.plugins.push.receiver.JPushModuleReceiver"
+174-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:75:13-80
+175            android:enabled="true"
+175-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:76:13-35
+176            android:exported="false" >
+176-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:77:13-37
+177            <intent-filter>
+177-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:78:13-82:29
+178                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE" />
+178-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:79:17-82
+178-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:79:25-79
+179
+180                <category android:name="com.cat.qflowlogin.app" />
+180-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+180-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+181            </intent-filter>
+182        </receiver>
+183        <receiver
+183-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:84:9-93:20
+184            android:name="cn.jiguang.plugins.push.receiver.JPushBroadcastReceiver"
+184-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:85:13-83
+185            android:enabled="true"
+185-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:86:13-35
+186            android:exported="false" >
+186-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:87:13-37
+187            <intent-filter>
+187-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:88:13-92:29
+188                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+188-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:89:17-86
+188-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:89:25-83
+189
+190                <category android:name="com.cat.qflowlogin.app" />
+190-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+190-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+191            </intent-filter>
+192        </receiver>
+193        <receiver
+193-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:94:9-96:40
+194            android:name="cn.jpush.android.service.SchedulerReceiver"
+194-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:95:13-70
+195            android:exported="false" /> <!-- since 4.6.0 Required SDK核心功能 -->
+195-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:96:13-37
+196        <activity
+196-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:98:9-109:20
+197            android:name="cn.android.service.JTransitActivity"
+197-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:99:13-63
+198            android:exported="true"
+198-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:100:13-36
+199            android:taskAffinity=""
+199-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:101:13-36
+200            android:theme="@style/JPushTheme" >
+200-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:102:13-46
+201            <intent-filter>
+201-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:103:13-108:29
+202                <action android:name="cn.android.service.JTransitActivity" />
+202-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:104:17-78
+202-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:104:25-75
+203
+204                <category android:name="android.intent.category.DEFAULT" />
+204-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:17-76
+204-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:42:27-73
+205                <category android:name="com.cat.qflowlogin.app" />
+205-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+205-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+206            </intent-filter>
+207        </activity>
+208        <activity
+208-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:110:9-121:20
+209            android:name="cn.jpush.android.service.DActivity"
+209-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:111:13-62
+210            android:enabled="true"
+210-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:112:13-35
+211            android:exported="true"
+211-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:113:13-36
+212            android:taskAffinity=""
+212-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:114:13-36
+213            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+213-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:115:13-72
+214            <intent-filter>
+214-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:116:13-120:29
+215                <action android:name="cn.jpush.android.intent.DActivity" />
+215-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:117:17-76
+215-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:117:25-73
+216
+217                <category android:name="com.cat.qflowlogin.app" />
+217-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+217-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+218            </intent-filter>
+219        </activity>
+220
+221        <provider
+221-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:123:9-126:40
+222            android:name="cn.jpush.android.service.InitProvider"
+222-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:124:13-65
+223            android:authorities="com.cat.qflowlogin.app.jiguang.InitProvider"
+223-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:125:13-72
+224            android:exported="false" />
+224-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:126:13-37
+225
+226        <receiver
+226-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:40
+227            android:name="cn.jpush.android.service.AlarmReceiver"
+227-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-66
+228            android:exported="false" />
+228-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+229        <receiver
+229-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-22:20
+230            android:name="cn.jpush.android.service.PushReceiver"
+230-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-65
+231            android:enabled="true"
+231-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+232            android:exported="false" >
+232-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+233            <intent-filter android:priority="1000" >
+233-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-21:29
+233-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:28-51
+234                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+234-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-94
+234-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:25-91
+235
+236                <category android:name="com.cat.qflowlogin.app" />
+236-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+236-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+237            </intent-filter>
+238        </receiver>
+239
+240        <service
+240-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:9-33:19
+241            android:name="cn.jpush.android.service.PushService"
+241-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-64
+242            android:exported="false" >
+242-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-37
+243            <intent-filter>
+243-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-32:29
+244                <action android:name="cn.jpush.android.intent.REGISTER" />
+244-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:17-75
+244-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:25-72
+245                <action android:name="cn.jpush.android.intent.REPORT" />
+245-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:17-73
+245-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:29:25-70
+246                <action android:name="cn.jpush.android.intent.PushService" />
+246-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:17-78
+246-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:30:25-75
+247                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+247-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-76
+247-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:31:25-73
+248            </intent-filter>
+249        </service>
+250        <service
+250-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:34:9-40:19
+251            android:name="cn.jiguang.plugins.service.JCoreModuleService"
+251-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:35:13-73
+252            android:exported="true" >
+252-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:36:13-36
+253            <intent-filter>
+253-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:37:13-39:29
+254                <action android:name="cn.jiguang.user.service.action" />
+254-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:17-73
+254-->[:jcore-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jcore-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:38:25-70
+255            </intent-filter>
+256        </service>
+257
+258        <provider
+258-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-18:20
+259            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+259-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-83
+260            android:authorities="com.cat.qflowlogin.app.fileprovider"
+260-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-64
+261            android:exported="false"
+261-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+262            android:grantUriPermissions="true" >
+262-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-47
+263            <meta-data
+263-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:63
+264                android:name="android.support.FILE_PROVIDER_PATHS"
+264-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+265                android:resource="@xml/file_provider_paths" />
+265-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-60
+266        </provider>
+267        <provider
+267-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:9-32:20
+268            android:name="expo.modules.filesystem.FileSystemFileProvider"
+268-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-74
+269            android:authorities="com.cat.qflowlogin.app.FileSystemFileProvider"
+269-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:25:13-74
+270            android:exported="false"
+270-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-37
+271            android:grantUriPermissions="true" >
+271-->[:expo-file-system] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-file-system/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-47
+272            <meta-data
+272-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-17:63
+273                android:name="android.support.FILE_PROVIDER_PATHS"
+273-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:17-67
+274                android:resource="@xml/file_system_provider_paths" />
+274-->[:react-native-webview] /Users/april/Desktop/git-lab/app/cart-app/node_modules/react-native-webview/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-60
+275        </provider>
+276
+277        <meta-data
+277-->[:expo-modules-core] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-12:89
+278            android:name="org.unimodules.core.AppLoader#react-native-headless"
+278-->[:expo-modules-core] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-79
+279            android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader" />
+279-->[:expo-modules-core] /Users/april/Desktop/git-lab/app/cart-app/node_modules/expo-modules-core/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-86
+280
+281        <receiver
+281-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:25:9-37:20
+282            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+282-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:26:13-75
+283            android:directBootAware="true"
+283-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:27:13-43
+284            android:exported="true"
+284-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:28:13-36
+285            android:permission="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG" >
+285-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:29:13-78
+286            <intent-filter>
+286-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:30:13-36:29
+287
+288                <!-- Mandatory, be used to receive notification bar message click event. -->
+289                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+289-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:33:17-85
+289-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:33:25-82
+290                <!-- Optional, compatible with old huawei phones. -->
+291                <action android:name="com.huawei.intent.action.PUSH" />
+291-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:35:17-72
+291-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:35:25-69
+292            </intent-filter>
+293        </receiver>
+294        <receiver
+294-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:38:9-50:20
+295            android:name="com.huawei.hms.support.api.push.PushReceiver"
+295-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:39:13-72
+296            android:directBootAware="true"
+296-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:40:13-43
+297            android:exported="true"
+297-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:41:13-36
+298            android:permission="com.cat.qflowlogin.app.permission.PROCESS_PUSH_MSG" >
+298-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:42:13-78
+299            <intent-filter>
+299-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:43:13-49:29
+300
+301                <!-- Mandatory, be used to receive tokens. -->
+302                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+302-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:46:17-86
+302-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:46:25-83
+303                <!-- Mandatory, be used to receive messages. -->
+304                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+304-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:48:17-81
+304-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:48:25-78
+305            </intent-filter>
+306        </receiver> <!-- Definition of receiving service for notification bar and pass-through message of non-huawei mobile phone. -->
+307        <service
+307-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:53:9-63:19
+308            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+308-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:54:13-81
+309            android:directBootAware="true"
+309-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:55:13-43
+310            android:enabled="true"
+310-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:56:13-35
+311            android:exported="true"
+311-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:57:13-36
+312            android:process=":pushservice" >
+312-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:58:13-43
+313            <intent-filter>
+313-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:59:13-62:29
+314                <action android:name="com.huawei.push.msg.NOTIFY_MSG" />
+314-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:60:17-73
+314-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:60:25-70
+315                <action android:name="com.huawei.push.msg.PASSBY_MSG" />
+315-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:61:17-73
+315-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:61:25-70
+316            </intent-filter>
+317        </service>
+318
+319        <provider
+319-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:65:9-70:89
+320            android:name="com.huawei.hms.support.api.push.PushProvider"
+320-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:66:13-72
+321            android:authorities="com.cat.qflowlogin.app.huawei.push.provider"
+321-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:67:13-72
+322            android:exported="true"
+322-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:68:13-36
+323            android:readPermission="com.cat.qflowlogin.app.permission.PUSH_PROVIDER"
+323-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:69:13-79
+324            android:writePermission="com.cat.qflowlogin.app.permission.PUSH_WRITE_PROVIDER" />
+324-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:70:13-86
+325
+326        <meta-data
+326-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:72:9-74:46
+327            android:name="com.huawei.hms.client.service.name:push"
+327-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:73:13-67
+328            android:value="push:6.3.0.304" />
+328-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:74:13-43
+329        <meta-data
+329-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:75:9-77:33
+330            android:name="com.huawei.hms.min_api_level:push:push"
+330-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:76:13-66
+331            android:value="1" />
+331-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:77:13-30
+332
+333        <activity
+333-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:79:9-81:40
+334            android:name="com.huawei.hms.support.api.push.TransActivity"
+334-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:80:13-73
+335            android:exported="false" />
+335-->[com.huawei.hms:push:6.3.0.304] /Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/AndroidManifest.xml:81:13-37
+336
+337        <service
+337-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:15:9-21:19
+338            android:name="cn.jpush.android.service.PluginHuaweiPlatformsService"
+338-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:16:13-81
+339            android:exported="false" >
+339-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:17:13-37
+340            <intent-filter>
+340-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:18:13-20:29
+341                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+341-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:19:17-81
+341-->[cn.jiguang.sdk.plugin:huawei:4.8.3] /Users/april/.gradle/caches/transforms-3/0f2cebfe9417aa8c865555983e868cfd/transformed/jetified-huawei-4.8.3/AndroidManifest.xml:19:25-78
+342            </intent-filter>
+343        </service>
+344
+345        <provider
+345-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:10:9-14:39
+346            android:name="com.huawei.hms.aaid.InitProvider"
+346-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:11:13-60
+347            android:authorities="com.cat.qflowlogin.app.aaidinitprovider"
+347-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:12:13-68
+348            android:exported="false"
+348-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:13:13-37
+349            android:initOrder="500" />
+349-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:14:13-36
+350
+351        <meta-data
+351-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:16:9-18:52
+352            android:name="com.huawei.hms.client.service.name:opendevice"
+352-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:17:13-73
+353            android:value="opendevice:6.3.0.304" />
+353-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:18:13-49
+354        <meta-data
+354-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:19:9-21:33
+355            android:name="com.huawei.hms.min_api_level:opendevice:push"
+355-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:20:13-72
+356            android:value="1" /> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+356-->[com.huawei.hms:opendevice:6.3.0.304] /Users/april/.gradle/caches/transforms-3/a8b493498cf028bd805c7ce489d595c5/transformed/jetified-opendevice-6.3.0.304/AndroidManifest.xml:21:13-30
+357        <meta-data
+357-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:15:9-17:46
+358            android:name="com.huawei.hms.client.service.name:base"
+358-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:16:13-67
+359            android:value="base:6.4.0.302" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+359-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:17:13-43
+360        <meta-data
+360-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:20:9-22:33
+361            android:name="com.huawei.hms.min_api_level:base:hmscore"
+361-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:21:13-69
+362            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+362-->[com.huawei.hms:base:6.4.0.302] /Users/april/.gradle/caches/transforms-3/1ea6fbc36f92b645330a75cc137b6a4d/transformed/jetified-base-6.4.0.302/AndroidManifest.xml:22:13-30
+363        <meta-data
+363-->[com.huawei.hms:availableupdate:6.4.0.302] /Users/april/.gradle/caches/transforms-3/b922a5b394e9e7145b5ec61f7856af2e/transformed/jetified-availableupdate-6.4.0.302/AndroidManifest.xml:17:9-19:35
+364            android:name="availableLoaded"
+364-->[com.huawei.hms:availableupdate:6.4.0.302] /Users/april/.gradle/caches/transforms-3/b922a5b394e9e7145b5ec61f7856af2e/transformed/jetified-availableupdate-6.4.0.302/AndroidManifest.xml:18:13-43
+365            android:value="yes" />
+365-->[com.huawei.hms:availableupdate:6.4.0.302] /Users/april/.gradle/caches/transforms-3/b922a5b394e9e7145b5ec61f7856af2e/transformed/jetified-availableupdate-6.4.0.302/AndroidManifest.xml:19:13-32
+366
+367        <provider
+367-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:11:9-14:40
+368            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+368-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:12:13-90
+369            android:authorities="com.cat.qflowlogin.app.AGCInitializeProvider"
+369-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:13:13-73
+370            android:exported="false" />
+370-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:14:13-37
+371
+372        <service
+372-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:16:9-18:40
+373            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+373-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:17:13-70
+374            android:exported="false" /> <!-- push 应用定义消息 receiver 声明 -->
+374-->[com.huawei.agconnect:agconnect-core:1.5.2.300] /Users/april/.gradle/caches/transforms-3/f2184e220b6729a8d010088036bb104a/transformed/jetified-agconnect-core-1.5.2.300/AndroidManifest.xml:18:13-37
+375        <service
+375-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:39:9-41:39
+376            android:name="com.meizu.cloud.pushsdk.NotificationService"
+376-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:40:13-71
+377            android:exported="true" />
+377-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:41:13-36
+378
+379        <receiver
+379-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:43:9-50:20
+380            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+380-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:44:13-72
+381            android:exported="true"
+381-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:45:13-36
+382            android:permission="com.meizu.flyme.permission.PUSH" >
+382-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:46:13-65
+383            <intent-filter>
+383-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:47:13-49:29
+384                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+384-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:48:17-82
+384-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:48:25-79
+385            </intent-filter>
+386        </receiver> <!-- push 应用定义消息 receiver 声明 -->
+387        <receiver
+387-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:53:9-71:20
+388            android:name="cn.jpush.android.service.PluginMeizuPlatformsReceiver"
+388-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:54:13-81
+389            android:exported="true"
+389-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:55:13-36
+390            android:permission="com.meizu.flyme.permission.PUSH" >
+390-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:56:13-65
+391            <intent-filter>
+391-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:57:13-70:29
+392
+393                <!-- 接收 push 消息 -->
+394                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+394-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:60:17-78
+394-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:60:25-75
+395                <!-- 接收 register 消息 -->
+396                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+396-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:62:17-88
+396-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:62:25-85
+397                <!-- 接收 unregister 消息 -->
+398                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+398-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:64:17-90
+398-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:64:25-87
+399                <!-- 兼容低版本 Flyme3 推送服务配置 -->
+400                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+400-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:66:17-77
+400-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:66:25-74
+401                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+401-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:67:17-72
+401-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:67:25-69
+402
+403                <category android:name="com.cat.qflowlogin.app" />
+403-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:17-61
+403-->[:jpush-react-native] /Users/april/Desktop/git-lab/app/cart-app/node_modules/jpush-react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:46:27-58
+404            </intent-filter>
+405        </receiver>
+406
+407        <meta-data
+407-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:73:9-75:47
+408            android:name="MEIZU_APPKEY"
+408-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:74:13-40
+409            android:value="MZ-cad82d5855a6456f8dd1050828e3b01f" />
+409-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:75:13-44
+410        <meta-data
+410-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:76:9-78:46
+411            android:name="MEIZU_APPID"
+411-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:77:13-39
+412            android:value="MZ-135960" />
+412-->[cn.jiguang.sdk.plugin:meizu:4.8.3] /Users/april/.gradle/caches/transforms-3/4945820ae8725d2bdd8555b1540149ff/transformed/jetified-meizu-4.8.3/AndroidManifest.xml:78:13-43
+413
+414        <receiver
+414-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:12:9-20:20
+415            android:name="cn.jpush.android.service.PluginVivoMessageReceiver"
+415-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:13:13-78
+416            android:exported="false" >
+416-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:14:13-37
+417            <intent-filter>
+417-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:15:13-19:29
+418
+419                <!-- 接收 push 消息 -->
+420                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+420-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:18:17-77
+420-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:18:25-74
+421            </intent-filter>
+422        </receiver> <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
+423        <meta-data
+423-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:22:9-24:35
+424            android:name="sdk_version_vivo"
+424-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:23:13-44
+425            android:value="484" />
+425-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:24:13-32
+426
+427        <service
+427-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:26:9-29:71
+428            android:name="com.vivo.push.sdk.service.CommandClientService"
+428-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:27:13-74
+429            android:exported="true"
+429-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:28:13-36
+430            android:permission="com.push.permission.UPSTAGESERVICE" />
+430-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:29:13-68
+431
+432        <activity
+432-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:31:9-35:75
+433            android:name="com.vivo.push.sdk.LinkProxyClientActivity"
+433-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:32:13-69
+434            android:exported="false"
+434-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:33:13-37
+435            android:screenOrientation="portrait"
+435-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:34:13-49
+436            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+436-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:35:13-72
+437
+438        <meta-data
+438-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:37:9-39:295
+439            android:name="local_iv"
+439-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:38:13-36
+440            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" /> <!-- 推送配置项 -->
+440-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:39:13-292
+441        <meta-data
+441-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:41:9-43:46
+442            android:name="com.vivo.push.api_key"
+442-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:42:13-49
+443            android:value="51966500daccc3ecf935096f9b4585ac" />
+443-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:43:13-43
+444        <meta-data
+444-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:44:9-46:45
+445            android:name="com.vivo.push.app_id"
+445-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:45:13-48
+446            android:value="105649035" />
+446-->[cn.jiguang.sdk.plugin:vivo:4.8.3] /Users/april/.gradle/caches/transforms-3/a09dd699c1b417eff0fc825e91e09b5b/transformed/jetified-vivo-4.8.3/AndroidManifest.xml:46:13-42
+447
+448        <service
+448-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:15:9-22:19
+449            android:name="cn.jpush.android.service.PluginOppoPushService"
+449-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:16:13-74
+450            android:exported="true"
+450-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:17:13-36
+451            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" >
+451-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:18:13-77
+452            <intent-filter>
+452-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:19:13-21:29
+453                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+453-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:20:17-85
+453-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:20:25-82
+454            </intent-filter>
+455        </service>
+456        <service
+456-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:23:9-30:19
+457            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+457-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:24:13-92
+458            android:exported="true"
+458-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:25:13-36
+459            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE" >
+459-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:26:13-77
+460            <intent-filter>
+460-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:19:13-21:29
+461                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+461-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:20:17-85
+461-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:20:25-82
+462            </intent-filter>
+463        </service>
+464        <service
+464-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:31:9-39:19
+465            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+465-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:32:13-82
+466            android:exported="true"
+466-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:33:13-36
+467            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE" >
+467-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:34:13-77
+468            <intent-filter>
+468-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:35:13-38:29
+469                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+469-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:36:17-84
+469-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:36:25-81
+470                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+470-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:37:17-82
+470-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:37:25-79
+471            </intent-filter>
+472        </service>
+473
+474        <meta-data
+474-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:41:9-43:46
+475            android:name="OPPO_APPKEY"
+475-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:42:13-39
+476            android:value="OP-91f3bd72afd942b4bebc6df441b4a12d" />
+476-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:43:13-43
+477        <meta-data
+477-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:44:9-46:45
+478            android:name="OPPO_APPID"
+478-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:45:13-38
+479            android:value="OP-31066251" /> <!-- </>值来自开发者平台取得的AppKey -->
+479-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:46:13-42
+480        <meta-data
+480-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:47:9-49:49
+481            android:name="OPPO_APPSECRET"
+481-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:48:13-42
+482            android:value="OP-76b946372fe84bf5b1dcc0d7b37e9e8f" />
+482-->[cn.jiguang.sdk.plugin:oppo:4.8.3] /Users/april/.gradle/caches/transforms-3/895fec2e3e2a9c69aad8a4cabd4dcfed/transformed/jetified-oppo-4.8.3/AndroidManifest.xml:49:13-46
+483        <meta-data
+483-->[:com.heytap.msp-push-3.1.0:] /Users/april/.gradle/caches/transforms-3/951e42964ca35ea805a750a51dd82d21/transformed/jetified-com.heytap.msp-push-3.1.0/AndroidManifest.xml:12:9-14:36
+484            android:name="sdkVersion"
+484-->[:com.heytap.msp-push-3.1.0:] /Users/april/.gradle/caches/transforms-3/951e42964ca35ea805a750a51dd82d21/transformed/jetified-com.heytap.msp-push-3.1.0/AndroidManifest.xml:13:13-38
+485            android:value="3100" />
+485-->[:com.heytap.msp-push-3.1.0:] /Users/april/.gradle/caches/transforms-3/951e42964ca35ea805a750a51dd82d21/transformed/jetified-com.heytap.msp-push-3.1.0/AndroidManifest.xml:14:13-33
+486
+487        <activity
+487-->[com.google.android.gms:play-services-base:17.0.0] /Users/april/.gradle/caches/transforms-3/5bf3153bf476d56e5746ea2ee42d2006/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+488            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+488-->[com.google.android.gms:play-services-base:17.0.0] /Users/april/.gradle/caches/transforms-3/5bf3153bf476d56e5746ea2ee42d2006/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+489            android:exported="false"
+489-->[com.google.android.gms:play-services-base:17.0.0] /Users/april/.gradle/caches/transforms-3/5bf3153bf476d56e5746ea2ee42d2006/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+490            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+490-->[com.google.android.gms:play-services-base:17.0.0] /Users/april/.gradle/caches/transforms-3/5bf3153bf476d56e5746ea2ee42d2006/transformed/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+491
+492        <meta-data
+492-->[com.google.android.gms:play-services-basement:17.0.0] /Users/april/.gradle/caches/transforms-3/81796a1554f3b66ead109564c1693491/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+493            android:name="com.google.android.gms.version"
+493-->[com.google.android.gms:play-services-basement:17.0.0] /Users/april/.gradle/caches/transforms-3/81796a1554f3b66ead109564c1693491/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+494            android:value="@integer/google_play_services_version" />
+494-->[com.google.android.gms:play-services-basement:17.0.0] /Users/april/.gradle/caches/transforms-3/81796a1554f3b66ead109564c1693491/transformed/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+495        <meta-data
+495-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:18:9-20:47
+496            android:name="XIAOMI_APPID"
+496-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:19:13-40
+497            android:value="MI-2882303761520247654" />
+497-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:20:13-44
+498        <meta-data
+498-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:21:9-23:48
+499            android:name="XIAOMI_APPKEY"
+499-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:22:13-41
+500            android:value="MI-5392024785654" /> <!-- </>值来自开发者平台取得的AppKey -->
+500-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:23:13-45
+501        <service
+501-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:25:9-30:46
+502            android:name="com.xiaomi.push.service.XMJobService"
+502-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:26:13-64
+503            android:enabled="true"
+503-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:27:13-35
+504            android:exported="false"
+504-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:28:13-37
+505            android:permission="android.permission.BIND_JOB_SERVICE"
+505-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:29:13-69
+506            android:process=":pushservice" />
+506-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:30:13-43
+507        <service
+507-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:31:9-34:46
+508            android:name="com.xiaomi.push.service.XMPushService"
+508-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:32:13-65
+509            android:enabled="true"
+509-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:33:13-35
+510            android:process=":pushservice" />
+510-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:34:13-43
+511        <service
+511-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:35:9-38:39
+512            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+512-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:36:13-68
+513            android:enabled="true"
+513-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:37:13-35
+514            android:exported="true" />
+514-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:38:13-36
+515        <service
+515-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:39:9-41:38
+516            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+516-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:40:13-70
+517            android:enabled="true" /> <!-- CP反馈NetworkStatusReceiver静态注册会被检出自启风险，故移除，仅使用动态注册 -->
+517-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:41:13-35
+518        <!-- <receiver -->
+519        <!-- android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" -->
+520        <!-- android:exported="true"> -->
+521        <!-- <intent-filter> -->
+522        <!-- <action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+523        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+524        <!-- </intent-filter> -->
+525        <!-- </receiver> -->
+526        <receiver
+526-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:52:9-59:20
+527            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+527-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:53:13-74
+528            android:exported="false"
+528-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:54:13-37
+529            android:process=":pushservice" >
+529-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:55:13-43
+530            <intent-filter>
+530-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:56:13-58:29
+531                <action android:name="com.xiaomi.push.PING_TIMER" />
+531-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:57:17-69
+531-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:57:25-66
+532            </intent-filter>
+533        </receiver>
+534        <receiver
+534-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:60:9-72:20
+535            android:name="cn.jpush.android.service.PluginXiaomiPlatformsReceiver"
+535-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:61:13-82
+536            android:exported="true" >
+536-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:62:13-36
+537            <intent-filter>
+537-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:63:13-65:29
+538                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+538-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:64:17-76
+538-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:64:25-73
+539            </intent-filter>
+540            <intent-filter>
+540-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:66:13-68:29
+541                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+541-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:67:17-76
+541-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:67:25-73
+542            </intent-filter>
+543            <intent-filter>
+543-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:69:13-71:29
+544                <action android:name="com.xiaomi.mipush.ERROR" />
+544-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:70:17-66
+544-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:70:25-63
+545            </intent-filter>
+546        </receiver> <!-- 支持VoIP和场景化通过透明页点击跳转 -->
+547        <!-- 对于targetSdkVersion变更为S及以上的应用，需要接入MiPushSDK 4.9.1及以上版本(海外版需接入4.8.6及以上版本)，并声明NotificationClickedActivity -->
+548        <activity
+548-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:75:9-85:20
+549            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+549-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:76:13-77
+550            android:enabled="true"
+550-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:77:13-35
+551            android:excludeFromRecents="true"
+551-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:78:13-46
+552            android:exported="true"
+552-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:79:13-36
+553            android:launchMode="singleInstance"
+553-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:80:13-48
+554            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+554-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:81:13-72
+555            <meta-data
+555-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:82:13-84:46
+556                android:name="supportStyle"
+556-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:83:17-44
+557                android:value="scene|voip" />
+557-->[cn.jiguang.sdk.plugin:xiaomi:4.8.3] /Users/april/.gradle/caches/transforms-3/8f8cde724ec6cfd81adc96a4980d970e/transformed/jetified-xiaomi-4.8.3/AndroidManifest.xml:84:17-43
+558        </activity>
+559        <activity
+559-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:10:9-21:20
+560            android:name="com.huawei.hms.activity.BridgeActivity"
+560-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:11:13-66
+561            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+561-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:12:13-131
+562            android:excludeFromRecents="true"
+562-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:13:13-46
+563            android:exported="false"
+563-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:14:13-37
+564            android:hardwareAccelerated="true"
+564-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:15:13-47
+565            android:screenOrientation="behind"
+565-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:16:13-47
+566            android:theme="@style/Base_Translucent" >
+566-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:17:13-52
+567            <meta-data
+567-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:18:13-20:77
+568                android:name="hwc-theme"
+568-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:19:17-41
+569                android:value="androidhwext:style/Theme.Emui.Translucent" />
+569-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:20:17-74
+570        </activity>
+571        <activity
+571-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:22:9-26:20
+572            android:name="com.huawei.hms.activity.EnableServiceActivity"
+572-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:23:13-73
+573            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+573-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:24:13-106
+574            android:exported="false" >
+574-->[com.huawei.hms:ui:6.4.0.302] /Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/AndroidManifest.xml:25:13-37
+575        </activity>
+576    </application>
+577
+578</manifest>

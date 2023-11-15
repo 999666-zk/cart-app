@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/april/Desktop/git-lab/app/cart-app/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bo-rCN/values-bo-rCN.xml",
+            "map": [
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/6878a670dd157dc4a6ca23d959431e6f/transformed/jetified-push-6.3.0.304/res/values-bo-rCN/values-bo-rCN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "73",
+                        "endOffsets": "124"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "936",
+                        "endColumns": "73",
+                        "endOffsets": "1005"
+                    }
+                },
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/bee59ea0ea3d5eb5217eae6811a9efd8/transformed/jetified-ui-6.4.0.302/res/values-bo-rCN/values-bo-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,248,555,623,936",
+                        "endColumns": "192,306,67,312,69",
+                        "endOffsets": "243,550,618,931,1001"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,248,555,623,1010",
+                        "endColumns": "192,306,67,312,69",
+                        "endOffsets": "243,550,618,931,1075"
+                    }
+                },
+                {
+                    "source": "/Users/april/.gradle/caches/transforms-3/951e42964ca35ea805a750a51dd82d21/transformed/jetified-com.heytap.msp-push-3.1.0/res/values-bo-rCN/values-bo-rCN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "87",
+                        "endOffsets": "138"
+                    },
+                    "to": {
+                        "startLines": "8",
+                        "startColumns": "4",
+                        "startOffsets": "1080",
+                        "endColumns": "87",
+                        "endOffsets": "1163"
+                    }
+                }
+            ]
+        }
+    ]
+}
